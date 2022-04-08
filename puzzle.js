@@ -8,7 +8,10 @@ const inputArr = [
     d: 4,
   },
 ];
-console.log(inputArr.reduce((r, c) => Object.assign(r, c), {}));
+
+// console.log(inputArr.reduce((r, c) => Object.assign(r, c), {}));
+
+console.log(Object.assign({}, ...inputArr));
 
 //   Output:
 //   {
